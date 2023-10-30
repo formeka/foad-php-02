@@ -9,6 +9,6 @@
 <body>
 
 <header>
-    <h1>Notes</h1>
+    <h1>Nations</h1>
     <?php include 'nav.php' ?>
 </header>

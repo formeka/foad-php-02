@@ -1,17 +1,28 @@
 <?php require 'partials/header.php' ?>
 <section class="note">
-
-    <?php
-    dd($nations);
-    foreach ($notes as $note) : ?>
-        <p>
-            <?= $i ?> - <a href="/note?id=<?= $note['id'] ?>">
-                <?= $note['title'] ?>
-            </a> - <a href="/note-delete?id=<?= $note['id'] ?>" onClick="return confirm('Etes vous certain de vouloir supprimer cette note !?');" class="error">X</a>
-        </p>
-    <?php
-        $i = $i + 1;
+    <?php //dd($nations) ?>
+    <table>
+    <tr>
+        <th>#</th>
+        <th>Countries</th>
+        <th>Region</th>
+        <th>Continent</th>
+    </tr>
+    
+    <?php 
+    $i=1;
+    foreach ($nations as $nation) : ?>
+        <tr>
+        <td><?=$i?></td>
+        <td><?=$nation['country']?></td>
+        <td><?=$nation['region']?></td>
+        <td><?=$nation['continent']?></td>
+        </tr>
+    <?php 
+    $i = $i + 1;
     endforeach; ?>
+
+    </table>
 
 </section>
 
