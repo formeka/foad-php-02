@@ -2,7 +2,7 @@
 <section class="note">
 
     <?php
-    $i = 1;
+    dd($nations);
     foreach ($notes as $note) : ?>
         <p>
             <?= $i ?> - <a href="/note?id=<?= $note['id'] ?>">
@@ -14,6 +14,6 @@
     endforeach; ?>
 
 </section>
-<p><a href="/note-new">Ajouter une note</a></p>
+
 
 <?php require 'partials/footer.php' ?>

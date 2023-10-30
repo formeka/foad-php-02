@@ -1,7 +1,7 @@
 <?php require 'partials/header.php' ?>
 
 
-<p>Application de prise de notes</p>
+<p>FOAD 2</p>
 
 
 <?php require 'partials/footer.php' ?>

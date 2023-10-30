@@ -1,9 +1,6 @@
 <?php
 $routes = [
     '/' => 'controllers/index.php',
-    '/contact' => 'controllers/contact.php',
-    '/notes' => 'controllers/notes.php',
-    '/note' => 'controllers/note.php',
-    '/note-delete' => 'controllers/note-delete.php',
-    '/note-new' => 'controllers/note-new.php',
+    '/requete1' => 'controllers/requete1.php',
+    '/requete2' => 'controllers/requete2.php',
   ];
